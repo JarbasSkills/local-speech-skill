@@ -3,38 +3,35 @@
     "skillMetadata": {
         "sections": [
             {
-                "name": "Options << Name of section",
+                "name": "Add hotword",
                 "fields": [
                     {
-                        "name": "internal_python_variable_name",
+                        "name": "new_word",
                         "type": "text",
-                        "label": "Setting Friendly Display Name",
+                        "label": "New wake word to add",
                         "value": "",
-                        "placeholder": "demo prompt in the input box"
+                        "placeholder": "hey computer"
+                    },
+                     {
+                        "name": "new_sensitivity",
+                        "type": "number",
+                        "label": "sensitivity",
+                        "value": "0.2",
+                        "placeholder": "0.2"
                     }
                 ]
             },
             {
-                "name": "Login << Name of another section",
+                "name": "Remove hotword",
                 "fields": [
                     {
-                        "type": "label",
-                        "label": "Just a little bit of extra info for the user to understand following settings"
-                    },
-                    {
-                        "name": "username",
+                        "name": "delete_word",
                         "type": "text",
-                        "label": "Username",
-                        "value": ""
-                    },
-                    {
-                        "name": "password",
-                        "type": "password",
-                        "label": "Password",
-                        "value": ""
+                        "label": "Wake word to delete",
+                        "value": "",
+                        "placeholder": "hey computer"
                     }
                 ]
-            }
         ]
     }
 }
