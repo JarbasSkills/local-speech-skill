@@ -22,6 +22,7 @@ class LocalSpeech(MycroftSkill):
         # dynamic update of words
         if self.settings.get("new_word"):
             name = self.settings["new_word"]
+            s = self.settings.get("new_sensitivity", 0.2)
             self.settings["hotwords"][name] = {"transcriptions": [name], "intent": "listen", "sensitivity": s}
         
         if self.settings.get("delete_word"):
